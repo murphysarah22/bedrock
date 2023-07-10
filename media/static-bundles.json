@@ -1232,6 +1232,12 @@
     },
     {
       "files":[
+        "css/mozorg/sustainability.scss"
+      ],
+      "name": "sustainability"
+    },
+    {
+      "files":[
         "css/mozorg/advertising.scss"
       ],
       "name": "mozilla-ads"
