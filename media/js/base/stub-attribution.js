@@ -524,6 +524,7 @@ if (typeof window.Mozilla === 'undefined') {
      */
     StubAttribution.init = function (successCallback, timeoutCallback) {
         var data = {};
+        var gtagData = {};
 
         if (!StubAttribution.meetsRequirements()) {
             return;
@@ -578,11 +579,11 @@ if (typeof window.Mozilla === 'undefined') {
 
             // Wait for GTM to load the GTAG GET API so that we can pass along client and session ID
             StubAttribution.waitForGTagAPI(function () {
-                data = StubAttribution.getGtagData();
+                gtagData = StubAttribution.getGtagData();
 
-                if (data && StubAttribution.withinAttributionRate()) {
+                if (gtagData && StubAttribution.withinAttributionRate()) {
                     // GA4 - send an event indicating we did or did not get session ID from GTM
-                    if (data.client_id && data.session_id) {
+                    if (gtagData.client_id && gtagData.session_id) {
                         window.dataLayer.push({
                             event: 'stub_session_test',
                             label: 'session found'
@@ -603,8 +604,9 @@ if (typeof window.Mozilla === 'undefined') {
      * The GTAG GET API tag will write it to the dataLayer once GTM has loaded it
      * https://www.simoahava.com/gtmtips/write-client-id-other-gtag-fields-datalayer/
      */
-    StubAttribution.getGtagData = function () {
-        var dl = typeof dl !== 'undefined' ? dl : window.dataLayer;
+    StubAttribution.getGtagData = function (dataLayer) {
+        dataLayer =
+            typeof dataLayer !== 'undefined' ? dataLayer : window.dataLayer;
 
         var result = {
             client_id: null,
@@ -634,8 +636,8 @@ if (typeof window.Mozilla === 'undefined') {
             }
         };
 
-        if (typeof dl === 'object') {
-            dl.forEach(function (layer) {
+        if (typeof dataLayer === 'object') {
+            dataLayer.forEach(function (layer) {
                 _findObject('gtagApiResult', layer);
             });
         }
