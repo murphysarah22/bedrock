@@ -4,13 +4,16 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import FxaProductButton from './fxa-product-button.es6.js';
-
 function handleEvent(e) {
     const hasConsent = e.detail.analytics;
 
     if (hasConsent) {
-        FxaProductButton.init();
+        // init Stripe Radar (3rd party script).
+        const newScriptTag = document.createElement('script');
+        const target = document.getElementsByTagName('script')[0];
+        newScriptTag.src = 'https://js.stripe.com/v3/';
+        target.parentNode.insertBefore(newScriptTag, target);
+
         window.removeEventListener('mozConsentChange', handleEvent, false);
     }
 }

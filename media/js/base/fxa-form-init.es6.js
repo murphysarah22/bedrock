@@ -6,4 +6,17 @@
 
 import FxaForm from './fxa-form.es6.js';
 
-FxaForm.init();
+function handleEvent(e) {
+    const hasConsent = e.detail.analytics;
+
+    if (hasConsent) {
+        FxaForm.init();
+
+        window.removeEventListener('mozConsentChange', handleEvent, false);
+    }
+}
+
+// Configure Sync for Firefox desktop browsers.
+FxaForm.configureSync();
+
+window.addEventListener('mozConsentChange', handleEvent, false);

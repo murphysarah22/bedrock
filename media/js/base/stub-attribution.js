@@ -525,10 +525,6 @@ if (typeof window.Mozilla === 'undefined') {
             return false;
         }
 
-        if (Mozilla.dntEnabled()) {
-            return false;
-        }
-
         return true;
     };
 

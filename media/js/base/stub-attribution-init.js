@@ -7,5 +7,14 @@
 (function () {
     'use strict';
 
-    Mozilla.StubAttribution.init();
+    function handleEvent(e) {
+        var hasConsent = e.detail.analytics;
+
+        if (hasConsent) {
+            Mozilla.StubAttribution.init();
+            window.removeEventListener('mozConsentChange', handleEvent, false);
+        }
+    }
+
+    window.addEventListener('mozConsentChange', handleEvent, false);
 })();
