@@ -708,12 +708,13 @@ def _get_adjust_link(adjust_url, app_store_url, google_play_url, redirect, local
     if creative:
         params += "&creative=" + creative
 
-    params += "&mz_pr=" + product
+    if redirect == "":
+        params += "&mz_pr=" + product
 
     if redirect_url:
-        link += "?redirect=" + quote(redirect_url, safe="") + "&" + params + "&mz_pl=" + redirect
+        link += "?redirect=" + quote(redirect_url, safe="") + "&" + params
     else:
-        link += "?" + params + "&mz_pl=mobile"
+        link += "?" + params
 
     return link
 

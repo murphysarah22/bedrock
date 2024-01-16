@@ -67,6 +67,8 @@ TrackProductDownload.getEventObject = (
     eventObject['method'] = method;
     if (release_channel) {
         eventObject['release_channel'] = release_channel;
+    } else {
+        eventObject['release_channel'] = 'release'; // TODO: is this a safe assumption or should I be  doing this in the adjust and store functions?
     }
     if (download_language) {
         eventObject['download_language'] = download_language;
@@ -131,68 +133,35 @@ TrackProductDownload.getEventFromUrl = (downloadURL) => {
             release,
             params.lang
         );
-    } else if (playStoreURL.test(downloadURL) || marketURL.test(downloadURL)) {
-        const idParam = params.id;
-        let androidProduct = 'unrecognized';
-        let androidRelease = '';
-
-        switch (idParam) {
-            case 'org.mozilla.firefox':
-                androidProduct = 'firefox';
-                androidRelease = 'release';
-                break;
-            case 'org.mozilla.fenix':
-                androidProduct = 'firefox';
-                androidRelease = 'nightly';
-                break;
-            case 'org.mozilla.firefox_beta':
-                androidProduct = 'firefox';
-                androidRelease = 'beta';
-                break;
-            case 'org.mozilla.focus':
-                androidProduct = 'focus';
-                break;
-            case 'org.mozilla.klar':
-                androidProduct = 'klar';
-                break;
-            case 'com.ideashower.readitlater.pro':
-                androidProduct = 'pocket';
-                break;
-        }
-
-        eventObject = TrackProductDownload.getEventObject(
-            androidProduct,
-            'android',
-            'store',
-            androidRelease
-        );
-    } else if (appStoreURL.test(downloadURL) || iTunesURL.test(downloadURL)) {
-        let iosProduct = 'unrecognized';
-        if (downloadURL.indexOf('/id989804926') !== -1) {
-            iosProduct = 'firefox';
-        } else if (downloadURL.indexOf('/id1055677337') !== -1) {
-            iosProduct = 'focus';
-        } else if (downloadURL.indexOf('/id1073435754') !== -1) {
-            iosProduct = 'klar';
-        } else if (downloadURL.indexOf('/id309601447') !== -1) {
-            iosProduct = 'pocket';
-        }
-        // Apple App Store
-        eventObject = TrackProductDownload.getEventObject(
-            iosProduct,
-            'ios',
-            'store',
-            'release'
-        );
-    } else if (adjustURL.test(downloadURL)) {
+    } else if (
+        playStoreURL.test(downloadURL) ||
+        marketURL.test(downloadURL) ||
+        appStoreURL.test(downloadURL) ||
+        iTunesURL.test(downloadURL)
+    ) {
         eventObject = TrackProductDownload.getEventObject(
             params.mz_pr,
             params.mz_pl,
-            'adjust',
-            'release'
+            'store',
+            params.mz_rc
+        );
+    } else if (adjustURL.test(downloadURL)) {
+        // if there's a redirect our product and platform info is in the redirect
+        if (params.redirect) {
+            const redirect = decodeURIComponent(params.redirect);
+            // to do, not crash if this fails
+            const moreParams = window._SearchParams.queryStringToObject(
+                redirect.split('?')[1]
+            );
+            params = Object.assign(params, moreParams);
+        }
+
+        eventObject = TrackProductDownload.getEventObject(
+            params.mz_pr,
+            params.mz_pl,
+            'adjust'
         );
     }
-
     return eventObject;
 };
 

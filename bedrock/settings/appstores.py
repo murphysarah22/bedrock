@@ -5,7 +5,7 @@
 from urllib.parse import quote
 
 # Base link to Firefox for Android on the Google Play store.
-GOOGLE_PLAY_FIREFOX_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
+GOOGLE_PLAY_FIREFOX_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefox&mz_pr=firefox_mobile&mz_pl=android"
 
 # Link to Firefox for Android on the Google Play store with Google Analytics
 # campaign parameters.
@@ -18,7 +18,7 @@ GOOGLE_PLAY_FIREFOX_LINK_MOZILLAONLINE = "https://www.firefox.com.cn/mobile/get-
 
 # Link to Firefox for iOS on the Apple App Store with Google Analytics campaign
 # patameters. Each implementation should add a "ct" parameter for analytics.
-APPLE_APPSTORE_FIREFOX_LINK = "https://itunes.apple.com/{country}/app/firefox-private-safe-browser/id989804926"
+APPLE_APPSTORE_FIREFOX_LINK = "https://itunes.apple.com/{country}/app/firefox-private-safe-browser/id989804926&mz_pr=firefox_mobile&mz_pl=ios"
 
 # Map Mozilla's locale codes to Apple's country codes so we can link to a
 # localized App Store page when possible. Here's the official territory list:
@@ -81,42 +81,43 @@ APPLE_APPSTORE_COUNTRY_MAP = {
 }
 
 # Link to Firefox Focus on the Apple App Store.
-APPLE_APPSTORE_FOCUS_LINK = "https://itunes.apple.com/{country}/app/firefox-focus-privacy-browser/id1055677337"
+APPLE_APPSTORE_FOCUS_LINK = "https://itunes.apple.com/{country}/app/firefox-focus-privacy-browser/id1055677337?mz_pr=focus&mz_pl=ios"
 
 # Link to Firefox Focus on the Google Play store.
-GOOGLE_PLAY_FOCUS_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.focus"
+GOOGLE_PLAY_FOCUS_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.focus&mz_pr=focus&mz_pl=android"
 
 # Link to Firefox Focus on the Apple App Store.
-APPLE_APPSTORE_KLAR_LINK = "https://itunes.apple.com/{country}/app/klar-by-firefox/id1073435754"
+APPLE_APPSTORE_KLAR_LINK = "https://itunes.apple.com/{country}/app/klar-by-firefox/id1073435754?mz_pr=focus&mz_pl=ios"
 
 # Link to Firefox Klar on the Google Play store.
-GOOGLE_PLAY_KLAR_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.klar"
+GOOGLE_PLAY_KLAR_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.klar&mz_pr=focus&mz_pl=android"
 
 # Link to Pocket on the Apple App Store.
-APPLE_APPSTORE_POCKET_LINK = "https://itunes.apple.com/{country}/app/pocket-save-read-grow/id309601447"
+APPLE_APPSTORE_POCKET_LINK = "https://itunes.apple.com/{country}/app/pocket-save-read-grow/id309601447?mz_pr=pocket&mz_pl=ios"
 
 # Link to Pocket on the Google Play store.
-GOOGLE_PLAY_POCKET_LINK = "https://play.google.com/store/apps/details?id=com.ideashower.readitlater.pro"
+GOOGLE_PLAY_POCKET_LINK = "https://play.google.com/store/apps/details?id=com.ideashower.readitlater.pro&mz_pr=pocket&mz_pl=android"
 
 # Link to Lockwise on the Apple App Store.
-APPLE_APPSTORE_LOCKWISE_LINK = "https://itunes.apple.com/{country}/app/id1314000270?mt=8"
+APPLE_APPSTORE_LOCKWISE_LINK = "https://itunes.apple.com/{country}/app/id1314000270?mt=8?mz_pr=lockwise&mz_pl=ios"
 
 # Link to Lockwise on the Google Play store.
-GOOGLE_PLAY_LOCKWISE_LINK = "https://play.google.com/store/apps/details?id=mozilla.lockbox"
+GOOGLE_PLAY_LOCKWISE_LINK = "https://play.google.com/store/apps/details?id=mozilla.lockbox&mz_pr=lockwise&mz_pl=android"
 
 # Link to Firefox Beta on the Google Play Store.
-GOOGLE_PLAY_FIREFOX_BETA_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta"
+GOOGLE_PLAY_FIREFOX_BETA_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta&mz_pr=firefox_mobile&mz_pl=android&mz_rc=beta"
 
 # Link to Firefox Nightly on the Google Play Store.
-GOOGLE_PLAY_FIREFOX_NIGHTLY_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.fenix"
+GOOGLE_PLAY_FIREFOX_NIGHTLY_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.fenix&mz_pr=firefox_mobile&mz_pl=android&mz_rc=nightly"
 
 # Link to Firefox for Fire TV on Amazon Store.
-AMAZON_FIREFOX_FIRE_TV_LINK = "https://www.amazon.com/Mozilla-Firefox-for-Fire-TV/dp/B078B5YMPD"
+AMAZON_FIREFOX_FIRE_TV_LINK = "https://www.amazon.com/Mozilla-Firefox-for-Fire-TV/dp/B078B5YMPD?mz_pr=firefox_mobile&mz_pl=firetv"
 
 # Link to Firefox Send on the Google Play Store.
-GOOGLE_PLAY_FIREFOX_SEND_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefoxsend"
+GOOGLE_PLAY_FIREFOX_SEND_LINK = "https://play.google.com/store/apps/details?id=org.mozilla.firefoxsend&mz_pr=send&mz_pl=android"
 
 # app.adjust.com links for all of the above products (Issue 7214)
+# do not ad mz_pr or mz_pl params to adjust links, they often include the store links, which have the param already
 ADJUST_FIREFOX_URL = "https://app.adjust.com/2uo1qc"
 ADJUST_FOCUS_URL = "https://app.adjust.com/b8s7qo"
 ADJUST_KLAR_URL = "https://app.adjust.com/jfcx5x"
