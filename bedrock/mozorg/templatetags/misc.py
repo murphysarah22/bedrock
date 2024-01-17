@@ -708,7 +708,7 @@ def _get_adjust_link(adjust_url, app_store_url, google_play_url, redirect, local
     if creative:
         params += "&creative=" + creative
 
-    if redirect == "":
+    if redirect != "ios" and redirect != "android":
         params += "&mz_pr=" + product
 
     if redirect_url:

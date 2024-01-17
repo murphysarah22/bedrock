@@ -18,7 +18,7 @@ GOOGLE_PLAY_FIREFOX_LINK_MOZILLAONLINE = "https://www.firefox.com.cn/mobile/get-
 
 # Link to Firefox for iOS on the Apple App Store with Google Analytics campaign
 # patameters. Each implementation should add a "ct" parameter for analytics.
-APPLE_APPSTORE_FIREFOX_LINK = "https://itunes.apple.com/{country}/app/firefox-private-safe-browser/id989804926&mz_pr=firefox_mobile&mz_pl=ios"
+APPLE_APPSTORE_FIREFOX_LINK = "https://itunes.apple.com/{country}/app/firefox-private-safe-browser/id989804926?mz_pr=firefox_mobile&mz_pl=ios"
 
 # Map Mozilla's locale codes to Apple's country codes so we can link to a
 # localized App Store page when possible. Here's the official territory list:

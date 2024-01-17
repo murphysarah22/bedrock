@@ -19,7 +19,7 @@
 {% set android_url = focus_adjust_url('android', 'mobile-focus-page') %}
 {% set variation_android_adjust_url = 'https://app.adjust.com/167k4ih?campaign=firefox-desktop&adgroup=pb&creative=focus-omc171-uk&redirect=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dorg.mozilla.focus' %}
 {% set variation_ios_adjust_url = 'https://app.adjust.com/167k4ih?campaign=firefox-desktop&adgroup=pb&creative=focus-omc171-uk&redirect=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Ffirefox-focus-privacy-browser%2Fid1055677337' %}
-{% set ios_url = focus_adjust_url('ios', 'mobile-focus-page') %}
+{% set ios_url = focus_adjust_url('none', 'mobile-focus-page') %}
 
 {% block page_css %}
   {{ css_bundle('protocol-split') }}
@@ -60,6 +60,29 @@
     media_include='firefox/browsers/mobile/includes/s2d-focus.html',
     media_after=True
   ) %}
+
+    <h3>focus</h3>
+    <p>{{ focus_adjust_url('none', 'mobile-focus-page') }}</p>
+    <p>{{ focus_adjust_url('ios', 'mobile-focus-page') }}</p>
+    <p>{{ focus_adjust_url('android', 'mobile-focus-page') }}</p>
+    <p>{{ settings.APPLE_APPSTORE_FOCUS_LINK }}</p>
+    <p>{{ settings.GOOGLE_PLAY_FOCUS_LINK }}</p>
+    <h3>firefox</h3>
+    <p>{{ firefox_adjust_url('none', 'mobile-focus-page') }}</p>
+    <p>{{ firefox_adjust_url('ios', 'mobile-focus-page') }}</p>
+    <p>{{ firefox_adjust_url('android', 'mobile-focus-page') }}</p>
+    <p>{{ settings.APPLE_APPSTORE_FIREFOX_LINK }}</p>
+    <p>{{ settings.GOOGLE_PLAY_FIREFOX_LINK }}</p>
+    <p>{{ settings.GOOGLE_PLAY_FIREFOX_BETA_LINK }}</p>
+    <p>{{ settings.GOOGLE_PLAY_FIREFOX_NIGHTLY_LINK }}</p>
+    <h3>pocket</h3>
+    <p>{{ pocket_adjust_url('none', 'mobile-focus-page') }}</p>
+    <p>{{ pocket_adjust_url('ios', 'mobile-focus-page') }}</p>
+    <p>{{ pocket_adjust_url('android', 'mobile-focus-page') }}</p>
+    <p>{{ settings.APPLE_APPSTORE_POCKET_LINK }}</p>
+    <p>{{ settings.GOOGLE_PLAY_POCKET_LINK }}</p>
+
+
     <div class="mzp-c-wordmark mzp-t-wordmark-md mzp-t-product-focus">{{ ftl('mobile-focus-firefox-focus') }}</div>
     <h1 class="mzp-u-title-xl">{{ ftl('mobile-focus-simply-private-mobile') }}</h1>
     <p class="c-tagline">{{ ftl('mobile-focus-firefox-focus-dedicated-with-v2') }}</p>

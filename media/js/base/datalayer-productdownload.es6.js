@@ -61,10 +61,18 @@ TrackProductDownload.getEventObject = (
     download_language = false
 ) => {
     const eventObject = {};
-    eventObject['event'] = 'product_download';
-    eventObject['product'] = product;
+
+    if (!product) {
+        eventObject['event'] = 'product_download';
+        eventObject['product'] = 'unrecognized';
+    } else {
+        eventObject['event'] = product + '_download';
+        eventObject['product'] = product;
+    }
+
     eventObject['platform'] = platform;
     eventObject['method'] = method;
+
     if (release_channel) {
         eventObject['release_channel'] = release_channel;
     } else {
@@ -148,12 +156,14 @@ TrackProductDownload.getEventFromUrl = (downloadURL) => {
     } else if (adjustURL.test(downloadURL)) {
         // if there's a redirect our product and platform info is in the redirect
         if (params.redirect) {
-            const redirect = decodeURIComponent(params.redirect);
-            // to do, not crash if this fails
-            const moreParams = window._SearchParams.queryStringToObject(
-                redirect.split('?')[1]
-            );
-            params = Object.assign(params, moreParams);
+            if (downloadURL.indexOf('?') > 0) {
+                const redirect = decodeURIComponent(params.redirect);
+                // TODO, not crash if this fails
+                const moreParams = window._SearchParams.queryStringToObject(
+                    redirect.split('?')[1]
+                );
+                params = Object.assign(params, moreParams);
+            }
         }
 
         eventObject = TrackProductDownload.getEventObject(
