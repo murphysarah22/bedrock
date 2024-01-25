@@ -1,0 +1,151 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+$font-path: '/media/protocol/fonts';
+$image-path: '/media/protocol/img';
+
+@import '~@mozilla-protocol/core/protocol/css/includes/lib';
+@import '../../../base/banners/includes/basic';
+
+$gradient: 470.59% 236.28% at 8.93% 58.89%,
+rgba(229, 63, 176, 0.15) 0%,
+rgba(144, 89, 255, 0.15) 62.5%,
+rgba(91, 109, 248, 0.15) 100%;
+
+.c-banner.monitor-banner {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: radial-gradient(#{$gradient});
+    position: relative;
+
+    .mzp-l-content {
+        padding: 0;
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .c-monitor-banner-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: $spacing-md;
+
+        .c-monitor-banner-logo {
+            align-self: flex-start;
+            flex-grow: 2;
+            max-width: 150px;
+        }
+
+        .monitor-banner-text {
+            display: flex;
+            flex-direction: column;
+            max-width: 200px;
+            margin-right: $spacing-xl;
+
+            @media #{$mq-sm} {
+                max-width: none;
+
+                h2 br {
+                    display: inline;
+                }
+            }
+        }
+
+        h2 {
+            @include font-base;
+            @include font-size(20px);
+            margin: 0 0 $spacing-md;
+
+            br {
+                display: none;
+            }
+
+            span {
+                color: #C60184;
+            }
+        }
+
+        .mzp-c-button {
+            @include font-size(14px);
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+
+        @media #{$mq-md} {
+            justify-content: center;
+            align-items: center;
+
+            .monitor-banner-text {
+                flex-direction: row;
+                flex-grow: 2;
+                justify-content: space-around;
+
+                h2 {
+                    @include font-size(24px);
+                    margin-bottom: 0;
+                }
+
+                .mzp-c-button {
+                    align-self: center;
+                }
+            }
+
+            .c-monitor-banner-logo {
+                align-self: flex-center;
+                flex-grow: 2;
+                max-width: 120px;
+            }
+        }
+
+        @media #{$mq-lg} {
+            padding: $spacing-sm 0;
+        }
+    }
+}
+
+.monitor-feature {
+    @include font-base;
+    padding-top: 0;
+
+    .feature-wrapper {
+        border-radius: $border-radius-md;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: radial-gradient($gradient);
+        padding: $spacing-2xl $spacing-md;
+
+        h2 {
+            text-align: left;
+            @include font-base;
+            @include font-size(32px);
+            margin: $spacing-xl 0;
+
+            br {
+                display: none;
+            }
+
+            span {
+                color: #C60184;
+            }
+        }
+
+        .mzp-c-button {
+            white-space: nowrap;
+        }
+
+        @media #{$mq-md} {
+            padding: $spacing-md $spacing-lg;
+            flex-direction: row;
+            align-items: center;
+
+            h2 br {
+                display: inline;
+            }
+        }
+    }
+}
