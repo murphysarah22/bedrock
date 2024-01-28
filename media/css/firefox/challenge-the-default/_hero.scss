@@ -276,7 +276,8 @@ main[data-variant="4"] {
 main[data-variant="2"],
 main[data-variant="3"],
 main[data-variant="4"],
-main[data-variant="5"] {
+main[data-variant="5"],
+main[data-variant="6"] {
     .c-hero-top {
         border-color: transparent;
     }
@@ -337,6 +338,77 @@ main[data-variant="5"] {
             @include background-size(90px 90px);
             height: 90px;
             width: 90px;
+        }
+    }
+}
+
+@media #{$mq-lg} {
+    main[data-variant="6"] {
+        .c-ctd-hero .c-hero-text h1 {
+            @include font-size(90px);
+        }
+
+        .icon-firefox {
+            @include background-size(70px 70px);
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+// Custom overrides for French
+[lang="fr"] {
+    main[data-variant="none"],
+    main[data-variant="1"] {
+        .c-ctd-hero {
+            .hero-content-wrapper {
+                display: block;
+            }
+
+            .c-hero-text {
+                max-width: 100%;
+
+                @media #{$mq-lg} {
+                    h1 {
+                        @include font-size(94px);
+                    }
+                }
+            }
+
+            picture {
+                display: none;
+            }
+        }
+
+        .icon-firefox {
+            @include background-size(40px 40px);
+            background-image: url('/media/protocol/img/logos/firefox/browser/logo.svg');
+            background-position: top left;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 40px;
+            vertical-align: middle;
+            width: 40px;
+
+            @media #{$mq-lg} {
+                @include background-size(90px 90px);
+                height: 90px;
+                width: 90px;
+            }
+        }
+    }
+
+    main[data-variant="4"] {
+        @media #{$mq-lg} {
+            .c-hero-text h1 {
+                @include font-size(64px);
+
+                .icon-firefox {
+                    width: 70px;
+                    height: 70px;
+                    background-size: 70px 70px;
+                }
+            }
         }
     }
 }
