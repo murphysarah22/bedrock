@@ -1960,6 +1960,12 @@
     },
     {
       "files": [
+        "js/products/vpn/landing-experiment-headlines.es6.js"
+      ],
+      "name": "mozilla-vpn-landing-headlines-experiment"
+    },
+    {
+      "files": [
         "js/products/shared/affiliate-init.es6.js"
       ],
       "name": "mozilla-vpn-affiliate"

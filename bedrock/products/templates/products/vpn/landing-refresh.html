@@ -35,6 +35,8 @@
 {% block experiments %}
   {% if switch('experiment-vpn-pricing-position') %}
     {{ js_bundle('mozilla-vpn-landing-pricing-position-experiment') }}
+  {% elif switch('experiment-vpn-headlines') %}
+    {{ js_bundle('mozilla-vpn-landing-headlines-experiment') }}
   {% endif %}
 {% endblock %}
 
@@ -83,7 +85,15 @@
     media_class='mzp-l-split-h-center',
     media_after=True
   ) %}
-    <h1>{{ ftl('vpn-landing-powerful-privacy-for-peace') }}</h1>
+  {% if entrypoint_experiment == 'vpn-headlines' and entrypoint_variation == '2' %}
+    <h1 class="c-page-title u-title-xl">{{ ftl('vpn-landing-powerful-privacy-for-peace') }}</h1>
+    <h2 class="c-page-subtitle u-title-xs">Switch on complete web activity and location protection from hackers and trackers.</h2>
+  {% elif entrypoint_experiment == 'vpn-headlines' and entrypoint_variation == '3' %}
+    <h1 class="c-page-title">Mozilla VPN</h1>
+    <h2 class="c-page-subtitle u-title-xs">Protect your digital activity and physical location with just one click.</h2>
+  {% else %}
+    <h1 class="c-page-title">{{ ftl('vpn-landing-powerful-privacy-for-peace') }}</h1>
+  {% endif %}
 
     {% if vpn_available %}
       <p class="c-main-cta">
