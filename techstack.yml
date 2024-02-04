@@ -1,0 +1,746 @@
+repo_name: murphysarah22/bedrock
+report_id: 3b3f07a1d294c0bbd9d9eee855abed13
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-04T00:26:39+00:00'
+requested_by: reemhamz
+provider: github
+branch: main
+detected_tools_count: 58
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: Jinja
+  description: Full featured template engine for Python
+  website_url: https://palletsprojects.com/p/jinja/
+  version: 3.1.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/service/2303/New_Project__20_.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/prod.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-23 17:08:13.000000000 Z
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2022-01-20 19:48:26.000000000 Z
+- name: Smarty
+  description: Template engine for PHP
+  website_url: http://www.smarty.net/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/service/3693/smarty.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: Django
+  description: The Web framework for perfectionists with deadlines
+  website_url: https://www.djangoproject.com/
+  version: 3.2.23
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/994/4aGjtNQv.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/prod.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-03 14:51:22.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2014-01-18 00:52:54.000000000 Z
+- name: Tornado
+  description: A Python web framework and asynchronous networking library, originally
+    developed at FriendFeed
+  website_url: http://www.tornadoweb.org/
+  version: '6.4'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1002/tornado.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/docs.in
+  detection_source: requirements/docs.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-03 14:51:22.000000000 Z
+- name: css-loader
+  description: Helps webpack to collect CSS from all the css files
+  website_url: https://github.com/webpack-contrib/css-loader
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-07-19 18:03:33.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.23.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: Codecov
+  description: Hosted coverage reports with awesome features to enhance your CI workflow
+  website_url: https://codecov.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Coverage
+  image_url: https://img.stackshare.io/service/2673/Codecov_Mark_Circle_Pink.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/codecov.yml
+  detection_source: codecov.yml
+  last_updated_by: Steve Jalim
+  last_updated_on: 2021-10-27 15:21:21.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2014-01-18 00:52:54.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/.github/workflows/cdn_tests.yml
+  detection_source: ".github/workflows/cdn_tests.yml"
+  last_updated_by: Steve Jalim
+  last_updated_on: 2023-05-10 11:41:29.000000000 Z
+- name: Gunicorn
+  description: A Python WSGI HTTP Server for UNIX
+  website_url: http://gunicorn.org/
+  version: 19.7.1
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/1091/gunicorn.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/prod.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2024-01-29 23:38:09.000000000 Z
+- name: Jasmine
+  description: DOM-less simple JavaScript testing framework
+  website_url: http://jasmine.github.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/831/7c0b595409af531b9cdeb07f8c513e8b.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-10-17 08:21:01.000000000 Z
+- name: LiveReload
+  description: CSS edits and image changes apply live. CoffeeScript, SASS, LESS and
+    others just work.
+  website_url: http://livereload.com
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Live Reloading
+  image_url: https://img.stackshare.io/service/2601/128.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/docs.txt
+  detection_source: requirements/docs.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2023-05-26 15:16:00.000000000 Z
+- name: New Relic
+  description: New Relic is the industry’s largest and most comprehensive cloud-based
+    observability platform.
+  website_url: http://newrelic.com
+  open_source: false
+  hosted_saas: true
+  category: Monitoring
+  sub_category: Performance Monitoring
+  image_url: https://img.stackshare.io/service/103/default_193410db3a7e419c7b436961bf41d733c7346b59.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/newrelic.ini
+  detection_source: newrelic.ini
+  last_updated_by: Giorgos Logiotatidis
+  last_updated_on: 2015-09-09 10:05:11.000000000 Z
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  version: 2.7.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/contentful_migrations/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-14 03:06:46.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/docs.txt
+  detection_source: requirements/docs.txt
+  last_updated_by: Paul McLanahan
+  last_updated_on: 2021-09-09 21:01:17.000000000 Z
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2022-01-20 19:48:26.000000000 Z
+- name: Selenium
+  description: Web Browser Automation
+  website_url: http://www.seleniumhq.org/
+  version: 4.9.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Browser Testing
+  image_url: https://img.stackshare.io/service/1517/sbUizSli_400x400.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-10-25 21:20:01.000000000 Z
+- name: Sentry
+  description: 'See performance issues, fix errors faster, and optimize code health. '
+  website_url: https://sentry.io/welcome/?utm_source=stackshare&utm_medium=link&utm_campaign=profile
+  open_source: true
+  hosted_saas: true
+  category: Monitoring
+  sub_category: Exception Monitoring
+  image_url: https://img.stackshare.io/service/191/default_9262326592c97828a2a4299dec085a3674dd05f4.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: SinonJS
+  description: Standalone test spies, stubs and mocks for JavaScript
+  website_url: http://sinonjs.org/
+  version: 17.0.1
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/3509/logo.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-14 03:06:46.000000000 Z
+- name: Stylelint
+  description: A mighty, modern CSS linter
+  website_url: http://stylelint.io/
+  version: 16.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/5446/V9JsvPul_400x400.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-14 03:06:46.000000000 Z
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 5.89.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nathan Barrett
+  last_updated_on: 2023-10-16 17:19:28.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/docs.txt
+  detection_source: requirements/docs.txt
+  last_updated_by: Paul McLanahan
+  last_updated_on: 2021-09-09 21:01:17.000000000 Z
+- name: pytest
+  description: A full-featured Python testing tool to help you write better programs
+  website_url: http://pytest.org/latest/
+  version: 7.4.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/4586/Lu99Qe0Z_400x400.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.in
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-23 17:08:13.000000000 Z
+- name: Contentful
+  description: 'Contentful is a cloud-based API-first content platform '
+  website_url: https://www.contentful.com/
+  open_source: false
+  hosted_saas: true
+  category: Support, Sales, and Marketing
+  sub_category: Cloud Content Management System
+  image_url: https://img.stackshare.io/service/672/default_622e25ec0417ac85db5b66ca399528b101ba284f.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2023-03-13 16:41:32.000000000 Z
+- name: Pillow
+  description: Python Imaging Library
+  website_url: https://python-pillow.github.io/
+  open_source: true
+  hosted_saas: false
+  category: Assets and Media
+  sub_category: Image Processing and Management
+  image_url: https://img.stackshare.io/service/2375/default_1f67b0ca7416a9f52beb655f90b5602d5ef74b75.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-04 16:35:01.000000000 Z
+- name: APScheduler
+  description: We host the world's documentation. Maintained by @ericholscher &amp;
+    @agjhnsn. Not a support channel, please use GitHub.
+  website_url: https://apscheduler.readthedocs.io/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/9424/OhsWgbsr_normal.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2023-08-31 14:40:02.000000000 Z
+- name: Bedrock
+  description: A boilerplate with modern development tools for WordPress
+  website_url: https://roots.io/bedrock/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Support, Sales, and Marketing
+  sub_category: CMS Tools
+  image_url: https://img.stackshare.io/service/7524/bedrock.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/docker-compose.yml
+  detection_source: docker-compose.yml
+  last_updated_by: Steve Jalim
+  last_updated_on: 2022-02-08 16:59:17.000000000 Z
+- name: PyYAML
+  website_url: http://pyyaml.org/wiki/PyYAML
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/3730/no-img-open-source.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2022-01-20 19:48:26.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/murphysarah22/bedrock
+  detection_source: Repo Metadata
+- name: Sphinx
+  description: Open source full text search server, designed from the ground up with
+    performance, relevance (aka search quality), and integration simplicity in mind
+  website_url: http://sphinxsearch.com/
+  open_source: false
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Search Engines
+  image_url: https://img.stackshare.io/service/1598/TtqoAo1V.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/docs.txt
+  detection_source: requirements/docs.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2024-01-23 17:08:13.000000000 Z
+- name: docutils
+  description: "http://t.co/lH6rcPxBja Service Outage and other informational alerts.\r\n\r\nFor
+    support, see ticket/IRC/email information on http://t.co/nE5akSwLqM"
+  website_url: http://docutils.sourceforge.net/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8480/LI68uG-2_normal.jpg
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2023-08-31 14:40:02.000000000 Z
+- name: jq
+  description: jq is a lightweight and flexible command-line JSON processor.
+  website_url: https://stedolan.github.io/jq
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/7514/jq.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Rob Hudson
+  last_updated_on: 2022-01-20 19:48:26.000000000 Z
+- name: qrcode
+  website_url: http://goqr.me/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8580/no-img-open-source.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/requirements/dev.txt
+  detection_source: requirements/dev.txt
+  last_updated_by: Steve Jalim
+  last_updated_on: 2023-02-13 18:42:43.000000000 Z
+- name: svgo
+  website_url: https://github.com/svg/svgo
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8443/2473585.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: "@babel/core"
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/@babel/core
+  version: 7.23.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: "@babel/preset-env"
+  description: A Babel preset for each environment
+  package_url: https://www.npmjs.com/@babel/preset-env
+  version: 7.23.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15819/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: "@sentry/browser"
+  description: Official Sentry SDK for browsers
+  package_url: https://www.npmjs.com/@sentry/browser
+  version: 7.88.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18385/default_3918a37cf2f76449e061a2c79fb02113faa1391a.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: babel-loader
+  description: Babel module loader for webpack
+  package_url: https://www.npmjs.com/babel-loader
+  version: 9.1.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: caniuse-lite
+  description: A smaller version of caniuse-db, with only the essentials!
+  package_url: https://www.npmjs.com/caniuse-lite
+  version: 1.0.30001570
+  license: CC-BY-4.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18015/default_1f8ed84269df051b7e91bcbcb5c88ac6f0d8720d.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: clean-webpack-plugin
+  description: A webpack plugin to remove/clean your build folder
+  package_url: https://www.npmjs.com/clean-webpack-plugin
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16068/default_d4e765f8a43dcfd232c8b9ee9732058bc27c727a.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2024-01-29 06:02:51.000000000 Z
+- name: concurrently
+  description: Run commands concurrently
+  package_url: https://www.npmjs.com/concurrently
+  version: 8.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16041/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: copy-webpack-plugin
+  description: Copy files &amp;&amp; directories with webpack
+  package_url: https://www.npmjs.com/copy-webpack-plugin
+  version: 11.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15941/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nathan Barrett
+  last_updated_on: 2023-10-16 17:19:28.000000000 Z
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  version: 9.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-14 03:06:46.000000000 Z
+- name: jasmine-core
+  description: Official packaging of Jasmine's core files for use by Node.js projects
+  package_url: https://www.npmjs.com/jasmine-core
+  version: 5.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15905/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: mini-css-extract-plugin
+  description: Extracts CSS into separate files
+  package_url: https://www.npmjs.com/mini-css-extract-plugin
+  version: 2.7.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15992/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-09-18 08:30:39.000000000 Z
+- name: sass-loader
+  description: Sass loader for webpack
+  package_url: https://www.npmjs.com/sass-loader
+  version: 13.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15842/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: style-loader
+  description: Style loader module for webpack
+  package_url: https://www.npmjs.com/style-loader
+  version: 3.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15822/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-14 03:06:46.000000000 Z
+- name: svgo
+  description: Nodejs-based tool for optimizing SVG vector graphics files
+  package_url: https://www.npmjs.com/svgo
+  version: 3.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16716/default_e3c0987b80983280e46e6e1723fcfcff50fa4824.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Alex Gibson
+  last_updated_on: 2023-12-19 09:50:57.000000000 Z
+- name: terser-webpack-plugin
+  description: Terser plugin for webpack
+  package_url: https://www.npmjs.com/terser-webpack-plugin
+  version: 5.3.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16143/default_def3edb85d7fbd20200a5cd7d0a1679e31bc8b3d.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nathan Barrett
+  last_updated_on: 2023-10-16 17:19:28.000000000 Z
+- name: webpack-cli
+  description: CLI for webpack &amp; friends
+  package_url: https://www.npmjs.com/webpack-cli
+  version: 5.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15826/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nathan Barrett
+  last_updated_on: 2023-10-16 17:19:28.000000000 Z
+- name: webpack-dev-server
+  description: Serves a webpack app. Updates the browser on changes
+  package_url: https://www.npmjs.com/webpack-dev-server
+  version: 4.15.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15821/default_64690bc3e49bcee57094e51a7a26c620c48dbd82.png
+  detection_source_url: https://github.com/murphysarah22/bedrock/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nathan Barrett
+  last_updated_on: 2023-10-16 17:19:28.000000000 Z
